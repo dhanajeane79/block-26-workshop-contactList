@@ -6,7 +6,7 @@ The contact details will include information such as the contact's name, email, 
 
 The API I'll be accessing is called JSONPlaceholder, which is a free and open API that provides sample data for testing and learning purposes.
 
-To fetch the contact data, we'll make requests to the /users endpoint of the JSONPlaceholder API. This endpoint will provide us with an array of contacts, each containing properties like name, email, and phone number.
+To fetch the contact data, I'll make requests to the /users endpoint of the JSONPlaceholder API. This endpoint will provide me with an array of contacts, each containing properties like name, email, and phone number.
 
 ## Workshop Objectives
 
