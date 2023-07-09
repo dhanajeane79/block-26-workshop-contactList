@@ -1,4 +1,4 @@
-# Contact List - Block 26 React Workshop 
+# Block 26 React Workshop - Contact List 
 
 In this Workshop I am building an application that allows us to view a list of contacts and gain more details about a selected contact. I will befetching data from an external API and displaying it in React components.
 
@@ -19,4 +19,3 @@ Throughout this workshop, I'll cover the following objectives:
 5. Implementing the ability to click on a contact to view their detailed information.
 6. Managing state and updating the UI based on user interactions.
 7. Exploring best practices for handling asynchronous data fetching in React.
-8. By the end of the workshop, you'll have gained a solid understanding of data fetching in React and be able to apply these concepts to fetch and display data from other APIs in your future projects.
