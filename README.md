@@ -1,4 +1,4 @@
-# Contact List - Block 26 Workshop - Data Fetching with React 
+# Contact List - Block 26 React Workshop 
 
 In this Workshop I am building an application that allows us to view a list of contacts and gain more details about a selected contact. I will befetching data from an external API and displaying it in React components.
 
