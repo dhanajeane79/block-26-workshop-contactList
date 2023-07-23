@@ -42,7 +42,7 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
    fetchContact();
 }, [selectedContactId]);
 
-const handleGoBack = () => {
+const handleClose = () => {
    setSelectedContactId(null);
  };
   return (
@@ -57,7 +57,7 @@ const handleGoBack = () => {
       ) : (
         <p>Loading contact details...</p>
       )}
-      <button onClick={handleGoBack}>Go Back</button>
+      <button onClick={handleClose}>Close</button>
     </div>
   );
 }
