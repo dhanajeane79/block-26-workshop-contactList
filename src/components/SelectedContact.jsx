@@ -51,8 +51,22 @@ const handleClose = () => {
         <div>
           <h2>Contact Details</h2>
           <p>Name: {contact.name}</p>
+          <p>Username: {contact.username}</p>
           <p>Email: {contact.email}</p>
           <p>Phone: {contact.phone}</p>
+          <p>Website: www.{contact.website}</p>
+          <div>
+            <h3>Address</h3>
+            <p>{contact.address.street} Street</p>
+            <p>{contact.address.suite}</p>
+            <p>{contact.address.city} {contact.address.zipcode}</p>
+          </div>
+          <div>
+            <h3>Buisness Details</h3>
+            <p>Company Name: {contact.company.name} Street</p>
+            <p>Company Catchphrase: {contact.company.catchPhrase}</p>
+          </div>
+          
         </div>
       ) : (
         <p>Loading contact details...</p>
