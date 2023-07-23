@@ -82,6 +82,7 @@ th {
 
   font-size: x-large;
   padding: 10px;
+  border: 1px solid #ccc;
   background-color: rgb(222, 241, 249);
  
 }
