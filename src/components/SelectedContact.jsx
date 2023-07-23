@@ -48,7 +48,7 @@ const handleClose = () => {
   return (
     <div>
       {contact ? (
-        <div>
+        <div className="selectCard">
           <h2>Contact Details</h2>
           <p>Name: {contact.name}</p>
           <p>Username: {contact.username}</p>
