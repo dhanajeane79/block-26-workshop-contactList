@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 /*
 1. Create a new component for the contact details view.
 2. In the ContactList component:
@@ -18,4 +20,45 @@
    - Define a route for the ContactList component and another route for the ContactDetails component.
    - Set up the routing configuration to navigate to the ContactDetails view when a contact row is clicked.
 */
+
+
+import React, { useState, useEffect } from "react";
+
+export default function SelectedContact({ selectedContactId, setSelectedContactId }) {
+   const [contact, setContact] = useState(null);
+
+  useEffect(() => {
+   const fetchContact = async () => {
+      try {
+        const response = await fetch(
+               `https://jsonplaceholder.typicode.com/users/${selectedContactId}`
+           );
+           const data = await response.json();
+        setContact(data);
+       } catch (error) {
+           console.error(error);
+       }
+   }
+   fetchContact();
+}, [selectedContactId]);
+
+const handleGoBack = () => {
+   setSelectedContactId(null);
+ };
+  return (
+    <div>
+      {contact ? (
+        <div>
+          <h2>Contact Details</h2>
+          <p>Name: {contact.name}</p>
+          <p>Email: {contact.email}</p>
+          <p>Phone: {contact.phone}</p>
+        </div>
+      ) : (
+        <p>Loading contact details...</p>
+      )}
+      <button onClick={handleGoBack}>Go Back</button>
+    </div>
+  );
+}
 
